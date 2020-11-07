@@ -1,4 +1,4 @@
-<div class="menu-wrapper">
+<!-- <div class="menu-wrapper">
   <nav>
     <a href="{{site.baseurl}}/"> Home</a>
     <a
@@ -11,4 +11,47 @@
     <a href="{{site.baseurl}}/about.html">About</a>
     <a href="{{site.baseurl}}/coc.html">COC</a>
   </nav>
-</div>
+</div> -->
+
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navbar</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="menu-wrapper">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+
+      </label>
+      <a href="{{site.baseurl}}/">
+      <img
+      src="{{ site.baseurl }}/assets/images/bg/Pyconf 2020-03.svg"
+      alt="Pyconf Hyderabad 2020"
+    />
+  </a>
+      <ul>
+        <li><a class="active" href="{{site.baseurl}}/">Home</a></li>
+        <li><a  title="Buy tickets"
+          href="https://www.townscript.com/e/pyconf-hyderabad-2020"
+          target="_blank"
+          rel="noopener">Tickets</a></li>
+        <li><a href="{{site.baseurl}}/about.html">About</a></li>
+        <li><a href="{{site.baseurl}}/coc.html">COC</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  </body>
+</html>
+
